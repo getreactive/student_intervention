@@ -11804,7 +11804,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer: </strong>
+It is a classification type of supervised leanring problem to model the factors that predict how likely a student is to pass their high school final exam, by constructing an intervention system.
+Difference between Classification and Regression is whether it focus on caterogizing out of data or predicting a output of continous value using variables as predictors. Supervised classification tries to find boundary, which tends to be discrete ouput such as pass/not pass, wheras in regression it's whole other thing, we're try to find the trend of the data, linear/curve line that we can find to best find the trend of the data.
+So in this case, It is classification type since output type is discrete(class label such as pass/not pass) and what we are trying to find is decision boundary.</p>
 
 </div>
 </div>
@@ -12193,7 +12196,49 @@ Testing set has 95 samples.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer: </strong>
+Three suprevised learning models :</p>
+<ul>
+<li><p>Naive Bayes :</p>
+<ul>
+<li><p>strength : The relative simplicity of the algorithm and the independent features assumption of Naive Bayes make it                a strong performer for classifying texts</p>
+</li>
+<li><p>weakness : it matters what's the relation of the features in one data samples, it only calculate the accumulate probabilities and ignore the relationships of the features.</p>
+</li>
+<li><p>General application : text classifying</p>
+</li>
+<li><p>why choose : simple algorithm to deploy.</p>
+</li>
+</ul>
+</li>
+<li><p>Decision Tree:</p>
+<ul>
+<li><p>strength of the Decision Tree compare to SVM, is because it's really fast, robust to noise and missing values,accurate easy to use, computationally cheap. robust to noise and missing data.</p>
+</li>
+<li><p>weakness is a problem has lots of parameters and prone to overfitting, so may want to stop the growth of tree at the appropriate time. Complex trees are hard to interpret. Duplication within the same sub-tree.</p>
+</li>
+<li><p>General application : medical diagnosis, cridit risk analysis.</p>
+</li>
+<li><p>why choose : fast run time. computationally cheap</p>
+</li>
+</ul>
+</li>
+<li><p>Service Vector Machine:</p>
+<ul>
+<li><p>strength :If we can see clear distance separable plane between two datasets, then it's a good idea to use SVM.
+Training is relatively easy • No local optimal It scales relatively well to high dimensional data – Tradeoff between classifier complexity and error can be controlled explicitlyNon-traditional data like strings and trees can be used as input to SVM, instead of feature vectors</p>
+</li>
+<li><p>weakness :Because SVM has firm belief(shown by 'margin'), it has weakness in datasets that have close margin.It also tends to not work so well given huge dataset and huge parameters. It still good, but the algorithm will be very slow . Need to select a good kenel function. Model paremeters are difficult to interpret. Requires significant memory and processing prower.</p>
+<ul>
+<li><p>General application : Text classification , Image classification, Handwirting recognition</p>
+</li>
+<li><p>why choose : Data point for this project is as many as 30 features but SVM is relatively well to high dimension data.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
